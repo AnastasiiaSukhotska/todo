@@ -1,0 +1,61 @@
+.list-item-container{
+    display: flex;
+    align-items: center;
+    background-color: #DCDCDC;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
+.completed {
+    text-decoration: line-through;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.default {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.uncompleted-sign {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #999;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.completed-sign {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: green;
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+
+}
+.completed-sign::after {
+    content: 'V';
+    font-weight: bold;
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+   
+    
+}
+
+.task-description {
+    color: #999;
+    padding-top: 10px;
+}
+
+.green {
+    background-color: green;
+    
+}
