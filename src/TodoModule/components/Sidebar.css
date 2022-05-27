@@ -1,10 +1,19 @@
+.sidebar-root {
+    display: flex;
+    width: 100%;
+}
+
 .sidebar-container{
     background-color: #999;
     width: 30%;
     display: flex;
     flex-direction: column;
-    
     padding-top: 20px;
+}
+
+.sidebar-container-input {
+    display: flex;
+    flex-direction: row;
 }
 
 .sidebar-container-search {
@@ -13,8 +22,7 @@
     outline: none;
     border: none;
     height: 30px;
-    display: flex;
-    align-self: stretch;
+    flex-grow: 1;
     padding-left: 20px;
   
 
@@ -27,35 +35,5 @@
     padding-left: 30px;
     font-weight: normal;
     font-size: 50px;
-
-}
-
-.sidebar-container-footer {
-    border-top: 1px solid #696969;
-    padding: 10px 30px;
-    display: flex;
-    align-items: center;
-   
-}
-
-.sidebar-container-footer-input {
-    border-radius: 10px;
-    outline: none;
-    height: 60px;
-    margin-right: 15px;
-    font-size: 10px;
-    padding-bottom: 30px;
-    padding-left: 10px;
-    
-}
-.sidebar-container-footer-button {
-    height: 40px;
-    width: 40px;
-    background-color: green;
-    color: aliceblue;
-    border: none;
-    border-radius: 7px;
-  
-
 
 }

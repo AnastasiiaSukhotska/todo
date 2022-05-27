@@ -1,0 +1,23 @@
+.selected-item-container {
+    padding: 20px;
+}
+
+.selected-item-title {
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.unselected-sign {
+    margin-top: 40vh;
+    margin-left: 25vw;
+    font-weight: bold;
+    font-size: 60px;
+    color: #999;
+}
+.selected-item-description {
+    height: 200px;
+    width: 60vw;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
