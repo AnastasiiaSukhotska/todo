@@ -12,7 +12,7 @@
 .list-item-container-selected {
     display: flex;
     align-items: center;
-    background-color: aquamarine;
+    background-color: wheat;
     margin-bottom: 10px;
     border-radius: 15px;
     padding: 15px;
@@ -68,4 +68,9 @@
 .green {
     background-color: green;
     
+}
+
+.list-item-container button {
+    
+   margin-left: auto;
 }
