@@ -71,6 +71,9 @@
 }
 
 .list-item-container button {
-    
    margin-left: auto;
+}
+
+.ist-item-container-selected button {
+    margin-left: auto;
 }

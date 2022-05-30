@@ -58,6 +58,16 @@ onTodoAddHandler = (newItem) => {
     });
     
 }
+
+onSelectedItemChangeHandler = (newItem, id) => {
+    const item = this.state.list.find((newItem) => newItem.id === id);
+    const updatedItem = {...item, title: newItem.title, description: newItem.description, id: newItem.id};
+    this.setState({
+        list: this.state.list.map((todoItem) => todoItem.id === id ? updatedItem : todoItem),
+    }, () => {
+        console.log(this.state.list);
+    })
+}
   
     render() {
         return (
@@ -84,7 +94,9 @@ onTodoAddHandler = (newItem) => {
                     onTodoAdd={this.onTodoAddHandler}/>
                 </div>
                 <div>
-                        <SelectedItem item = {this.state.chosenItem}/>
+                        <SelectedItem 
+                        item = {this.state.chosenItem}
+                        onSelectedItemChange = {this.onSelectedItemChangeHandler}/>
                 </div>
              </div>
             </div>
